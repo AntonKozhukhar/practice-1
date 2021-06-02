@@ -12,13 +12,13 @@ export default function convertToRoman(n) {
         IX: 9, 
         V: 5, 
         IV: 4, 
-        I: 1 },
-	    str = '';
+        I: 1 }
+	let str = ''
 	for (let key in roman) {
 		while (n >= roman[key]) {
-			str += key;
-			n -= roman[key];
+			str += key
+			n -= roman[key]
 		}
 	}
-	return str;
+	return str
 }
