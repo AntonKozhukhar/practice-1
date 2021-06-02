@@ -6,9 +6,7 @@ export default function getStats(data) {
         avg: null,
     }
 
-    if (data.length === 0) {
-        return obj
-    }
+    if (data.length === 0) return obj
     
     obj.avg = data.reduce((acc, curr) => (acc += curr)) / data.length
 
