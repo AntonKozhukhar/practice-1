@@ -1,6 +1,6 @@
 
 export default function getStats(data) {
-    let obj = {
+    const obj = {
         min: null,
         max: null,
         avg: null,

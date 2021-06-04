@@ -4,9 +4,9 @@ export default function formatTime(seconds) {
     let minutes = Math.floor(seconds/60) - (hours * 60)
     let sec = seconds % 60
 
-    let ampm = hours >= 12 ? 'PM' : 'AM'
+    const ampm = hours >= 12 ? 'PM' : 'AM'
 
-    hours = hours % 12 //13 -> 01, 14 -> 02
+    hours = hours % 12 //13 -> 1, 14 -> 2
     hours = hours ? hours : 12; // 0 -> 12
 
     hours = hours < 10 ? '0' + hours : hours

@@ -1,7 +1,7 @@
 
 export default function merge(data) {
     
-    let obj = {}
+    const obj = {}
     data.forEach((el, index) => {
         for (const key in el) {
             if (!obj[key]) {
@@ -9,7 +9,7 @@ export default function merge(data) {
             }
             obj[key].push(data[index][key])
         }
-    });
+    })
 
     return obj
 }

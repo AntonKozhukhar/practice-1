@@ -1,6 +1,6 @@
 
 export default function convertToRoman(n) {
-    let roman = { 
+    const roman = { 
         M: 1000, 
         CM: 900, 
         D: 500,
@@ -17,7 +17,7 @@ export default function convertToRoman(n) {
     }
 	let str = ''
 
-	for (let key in roman) {
+	for (const key in roman) {
 		while (n >= roman[key]) {
 			str += key
 			n -= roman[key]
